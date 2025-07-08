@@ -24,6 +24,14 @@ Agora is a **完整的企業級 Slack 工作區應用程式**，提供全方位�
 - ✅ **測試覆蓋**: 企業級測試套件，涵蓋功能、錯誤處理、效能測試
 - ✅ **SOLID合規**: 從6.2/10提升至8.8/10 (42%改善)
 
+### 🌟 Open Source 發布 (2025-01)
+- ✅ **GitHub 儲存庫**: https://github.com/arthurinuspace/agora
+- ✅ **完整文檔**: README、CONTRIBUTING、DEPLOYMENT、LICENSE
+- ✅ **安全檢查**: 無機密資料洩露，完整 .gitignore 配置
+- ✅ **CI/CD 配置**: GitHub Actions 工作流程已配置
+- ✅ **程式碼品質**: 75個檔案，24,682行程式碼，企業級品質
+- ✅ **MIT License**: 開源友好的授權協議
+
 ## Architecture
 
 ### Core Technology Stack
@@ -185,8 +193,29 @@ test_performance.py         # 效能測試
 - **Test Coverage**: 企業級測試套件
 - **API Modules**: 3個專門化模組 (auth, polls, admin)
 - **Strategy Patterns**: 驗證(5種) + 導出(3種)
+- **GitHub Repository**: https://github.com/arthurinuspace/agora
+- **Code Quality**: 75個檔案，24,682行程式碼
+- **Open Source Status**: ✅ 完全開源，MIT License
 
 ## 🚀 Quick Start & Common Operations
+
+### 📥 Clone & Setup (從 GitHub)
+```bash
+# Clone 儲存庫
+git clone https://github.com/arthurinuspace/agora.git
+cd agora
+
+# 設置虛擬環境
+python3 -m venv venv
+source venv/bin/activate
+
+# 安裝依賴
+pip install -r requirements.txt
+
+# 配置環境變數
+cp .env.example .env
+# 編輯 .env 文件，設置你的 Slack credentials
+```
 
 ### 環境設置
 ```bash
@@ -274,10 +303,39 @@ DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./agora.db")
 
 ## 🔗 References & Documentation
 
+### 📚 本地文檔
 - **SOLID Architecture Report**: `SOLID_ARCHITECTURE.md` - 完整重構文檔
 - **Testing Summary**: `TEST_SUMMARY.md` - 測試套件總結
 - **Performance Metrics**: `test_performance.py` - 效能基準測試
+- **Deployment Guide**: `DEPLOYMENT.md` - 部署指南
+- **Contributing Guide**: `CONTRIBUTING.md` - 貢獻指南
+
+### 🌐 GitHub 資源
+- **Main Repository**: https://github.com/arthurinuspace/agora
+- **Issues & Bug Reports**: https://github.com/arthurinuspace/agora/issues
+- **Discussions**: https://github.com/arthurinuspace/agora/discussions
+- **Wiki**: https://github.com/arthurinuspace/agora/wiki
+- **Releases**: https://github.com/arthurinuspace/agora/releases
+
+### 🚀 開發與部署
+```bash
+# 本地開發
+git clone https://github.com/arthurinuspace/agora.git
+cd agora && source venv/bin/activate && pip install -r requirements.txt
+
+# 創建功能分支
+git checkout -b feature/your-feature-name
+
+# 提交變更
+git add . && git commit -m "feat: your feature description"
+git push origin feature/your-feature-name
+
+# 創建 Pull Request
+# 在 GitHub 上創建 PR 到 main 分支
+```
 
 ---
 
 **🎯 記住**: 所有開發都應遵循SOLID原則，使用依賴注入，並包含完整的測試覆蓋。有問題時，首先檢查服務是否正確配置和依賴注入是否正常工作。
+
+**🌟 Open Source**: 本專案已開源至 GitHub，歡迎社群貢獻！請參閱 CONTRIBUTING.md 了解貢獻指南。
