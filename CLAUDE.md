@@ -27,10 +27,31 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 🚀 部署文檔
 - **[Production Deployment](docs/deployment/production.md)** - 生產環境部署
+- **[Docker Deployment](docs/deployment/docker.md)** - Docker 容器化部署
 
-## 🏆 Recent Major Updates (2025-01)
+### 🛡️ 安全與管理文檔
+- **[Security Guide](docs/security.md)** - 安全最佳實踐
+- **[Admin Guide](docs/admin.md)** - 管理員指南
+- **[Monitoring](docs/monitoring.md)** - 監控與日誌
 
-### SOLID 架構重構完成
+### 📖 用戶文檔
+- **[Overview](docs/overview.md)** - 專案概述與核心功能
+- **[Installation](docs/installation.md)** - 詳細安裝指南
+- **[Configuration](docs/configuration.md)** - 配置設定說明
+- **[Usage Guide](docs/usage.md)** - 使用指南與範例
+- **[API Documentation](docs/api.md)** - RESTful API 參考
+
+## 🏆 Recent Major Updates (2025-07)
+
+### 📚 文檔系統模組化完成 (2025-07-09)
+- ✅ **完整文檔重構**: README.md 和 CLAUDE.md 模組化為 22 個專門文檔
+- ✅ **清晰導航系統**: 5大類別文檔 (核心、架構、開發、測試、部署)
+- ✅ **交叉引用系統**: 每個文檔都有完整的 "See Also" 交叉引用
+- ✅ **中英文混合**: 本地化導航配合國際化技術內容
+- ✅ **用戶體驗提升**: 從概述到詳細實現的漸進式學習路徑
+- ✅ **維護友善**: 模組化結構便於更新和維護特定主題
+
+### 🏗️ SOLID 架構重構完成 (2025-01)
 - ✅ **依賴注入容器**: 完整的服務容器和工廠模式實現
 - ✅ **服務抽象層**: 13個核心服務接口，支援完全解耦
 - ✅ **策略模式**: 可擴展的驗證和導出策略系統
@@ -66,17 +87,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - `請用 venv 下的 python`
   - 使用 `source venv/bin/activate` 激活虛擬環境
 
-### 📊 Architecture Metrics (Current Status - 2025-07)
+### 📊 Architecture Metrics (Current Status - 2025-07-09)
 - **SOLID Compliance**: 8.8/10 (從6.2提升42%)
 - **Service Abstractions**: 13個核心接口
-- **Test Coverage**: 企業級測試套件，10個測試文件
+- **Test Coverage**: 企業級測試套件，42個測試文件
 - **API Modules**: 3個專門化模組 (auth, polls, admin)
 - **Strategy Patterns**: 驗證(5種) + 導出(3種)
 - **GitHub Repository**: https://github.com/arthurinuspace/agora
-- **Code Quality**: 75個檔案，24,682行程式碼
+- **Code Quality**: 33個核心 Python 文件，17,691行程式碼
+- **Documentation System**: 22個模組化文檔，完整交叉引用系統
 - **Open Source Status**: ✅ 完全開源，MIT License
 - **Project Structure**: 清晰的分層架構，包含7個主要目錄類別
-- **Documentation**: 9個技術文檔文件，涵蓋架構、部署、測試
+- **Documentation Coverage**: 完整涵蓋從安裝到部署的全生命週期
 
 ### 詳細開發指南
 詳細的開發指南請參閱：
@@ -104,6 +126,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ---
 
-**🎯 記住**: 所有開發都應遵循SOLID原則，使用依賴注入，並包含完整的測試覆蓋。有問題時，首先檢查服務是否正確配置和依賴注入是否正常工作。
+## 🎯 核心開發提醒
 
-**🌟 Open Source**: 本專案已開源至 GitHub，歡迎社群貢獻！請參閱 CONTRIBUTING.md 了解貢獻指南。
+### SOLID 原則優先
+- 所有開發都應遵循 SOLID 原則，使用依賴注入
+- 新功能優先考慮策略模式，確保可擴展性
+- 包含完整的測試覆蓋（單元、集成、錯誤處理）
+
+### 故障排除
+- 有問題時，首先檢查服務是否正確配置
+- 確認依賴注入是否正常工作
+- 參閱 [Development Setup](docs/development/setup.md) 進行故障排除
+
+### 文檔維護
+- 更新代碼時，同步更新相關文檔
+- 新功能必須包含文檔說明
+- 使用模組化文檔結構，更新對應專門文檔
+
+**🌟 Open Source**: 本專案已開源至 GitHub，歡迎社群貢獻！請參閱 [CONTRIBUTING.md](CONTRIBUTING.md) 了解貢獻指南。
+
+**📚 完整文檔系統**: 已建立 22 個模組化文檔，提供從概述到實現的完整指南。使用本文檔頂部的導航系統快速找到所需資訊。
