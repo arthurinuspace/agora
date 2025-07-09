@@ -50,6 +50,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - ✅ **中英文混合**: 本地化導航配合國際化技術內容
 - ✅ **用戶體驗提升**: 從概述到詳細實現的漸進式學習路徑
 - ✅ **維護友善**: 模組化結構便於更新和維護特定主題
+- ✅ **多語言支援**: 新增 Traditional Chinese (zh-TW) 和 Japanese (ja) 版本 README
 
 ### 🏗️ SOLID 架構重構完成 (2025-01)
 - ✅ **依賴注入容器**: 完整的服務容器和工廠模式實現
@@ -63,7 +64,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - ✅ **GitHub 儲存庫**: https://github.com/arthurinuspace/agora
 - ✅ **完整文檔**: README、CONTRIBUTING、DEPLOYMENT、LICENSE
 - ✅ **安全檢查**: 無機密資料洩露，完整 .gitignore 配置
-- ✅ **CI/CD 配置**: GitHub Actions 工作流程已配置
+- ✅ **CI/CD 配置**: GitHub Actions 工作流程已配置 (目前暫時停用)
 - ✅ **程式碼品質**: 75個檔案，24,682行程式碼，企業級品質
 - ✅ **MIT License**: 開源友好的授權協議
 
@@ -96,9 +97,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **GitHub Repository**: https://github.com/arthurinuspace/agora
 - **Code Quality**: 33個核心 Python 文件，17,691行程式碼
 - **Documentation System**: 22個模組化文檔，完整交叉引用系統
+- **Internationalization**: 3個語言版本 (EN, zh-TW, ja)
 - **Open Source Status**: ✅ 完全開源，MIT License
 - **Project Structure**: 清晰的分層架構，包含7個主要目錄類別
 - **Documentation Coverage**: 完整涵蓋從安裝到部署的全生命週期
+- **CI/CD Status**: 暫時停用 (檔案重命名為 .disabled)
 
 ### 詳細開發指南
 詳細的開發指南請參閱：
@@ -146,3 +149,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **🌟 Open Source**: 本專案已開源至 GitHub，歡迎社群貢獻！請參閱 [CONTRIBUTING.md](CONTRIBUTING.md) 了解貢獻指南。
 
 **📚 完整文檔系統**: 已建立 22 個模組化文檔，提供從概述到實現的完整指南。使用本文檔頂部的導航系統快速找到所需資訊。
+
+## 🌐 國際化支援 (2025-07-09)
+
+### 📖 多語言 README 版本
+- **English**: [README.md](README.md) - 主要英文版本
+- **繁體中文**: [README.zh-TW.md](README.zh-TW.md) - 傳統中文版本
+- **日本語**: [README.ja.md](README.ja.md) - 日文版本
+
+### 🔧 維護說明
+- 所有版本保持內容同步，包括功能描述、安裝指南、使用範例
+- 技術術語使用各語言標準專業詞彙
+- 程式碼範例和命令保持完全一致
+- 連結和 GitHub 參考保持統一
+
+## ⚙️ 開發環境配置提醒
+
+### CI/CD 狀態
+- **GitHub Actions**: 目前暫時停用 (`.github/workflows/ci-cd.yml.disabled`)
+- **重新啟用**: 將檔案重命名為 `ci-cd.yml` 即可恢復
+- **配置**: 包含測試、代碼檢查、Docker 構建、部署流程
+
+### 虛擬環境
+- **啟動**: `source venv/bin/activate`
+- **Python 版本**: 3.12+
+- **依賴管理**: 使用 `requirements.txt`
