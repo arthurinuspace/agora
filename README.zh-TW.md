@@ -1,9 +1,11 @@
 # 🗳️ Agora - 適用於 Slack 的企業級匿名投票系統
 
+> **🌐 語言**: [English](README.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md)
+
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://docker.com)
-[![SOLID](https://img.shields.io/badge/Architecture-SOLID-yellow.svg)](./SOLID_ARCHITECTURE.md)
+[![SOLID](https://img.shields.io/badge/Architecture-SOLID-yellow.svg)](./documentation/SOLID_ARCHITECTURE.md)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 **Agora** 是一個生產就緒的企業級 Slack 工作空間應用程式，提供全面的匿名投票工具供團隊決策使用。採用 SOLID 架構原則建構，提供進階分析、角色管理、排程自動化和網頁管理控制台。
@@ -20,14 +22,14 @@
 - **[使用指南](docs/usage.md)** - 使用指南與範例
 
 ### 🏗️ 架構文件
-- **[SOLID 架構](SOLID_ARCHITECTURE.md)** - 完整架構文件
+- **[SOLID 架構](documentation/SOLID_ARCHITECTURE.md)** - 完整架構文件
 - **[技術堆疊](docs/architecture/tech-stack.md)** - 技術堆疊說明
 - **[API 文件](docs/api.md)** - RESTful API 參考
 
 ### 🔧 開發與部署
 - **[開發環境設置](docs/development/setup.md)** - 開發環境設置
 - **[Docker 部署](docs/deployment/docker.md)** - Docker 部署指南
-- **[生產環境部署](DEPLOYMENT.md)** - 生產環境部署
+- **[生產環境部署](documentation/DEPLOYMENT.md)** - 生產環境部署
 
 ### 🛡️ 安全性與管理
 - **[安全性指南](docs/security.md)** - 安全性最佳實務
@@ -35,7 +37,7 @@
 - **[監控](docs/monitoring.md)** - 監控與記錄
 
 ### 🧪 測試與品質
-- **[測試指南](TEST_SUMMARY.md)** - 測試指南
+- **[測試指南](documentation/TEST_SUMMARY.md)** - 測試指南
 - **[測試準則](docs/testing/guidelines.md)** - 測試要求
 - **[效能測試](docs/testing/performance.md)** - 效能測試
 
@@ -142,7 +144,7 @@ channels:read     # 讀取頻道資訊
 
 ## 🏗️ 架構概覽
 
-完整架構說明請參閱 [SOLID 架構](SOLID_ARCHITECTURE.md) 文件。
+完整架構說明請參閱 [SOLID 架構](documentation/SOLID_ARCHITECTURE.md) 文件。
 
 ### 技術堆疊
 - **後端**: FastAPI (Python 3.12+)
@@ -239,7 +241,7 @@ docker-compose -f docker-compose.prod.yml up -d --scale agora=3
 - **nginx**: 反向代理配 SSL（生產）
 
 詳細部署指南請參閱：
-- [生產環境部署](DEPLOYMENT.md) - 生產環境部署
+- [生產環境部署](documentation/DEPLOYMENT.md) - 生產環境部署
 - [Docker 部署](docs/deployment/docker.md) - Docker 部署詳解
 
 ## 📊 監控與分析
@@ -261,7 +263,7 @@ docker-compose -f docker-compose.prod.yml up -d --scale agora=3
 
 ## 🤝 貢獻
 
-歡迎貢獻！請查看我們的 [貢獻準則](./CONTRIBUTING.md) 了解詳情。
+歡迎貢獻！請查看我們的 [貢獻準則](./documentation/CONTRIBUTING.md) 了解詳情。
 
 ### 開發設置
 1. Fork 儲存庫
@@ -291,10 +293,10 @@ docker-compose -f docker-compose.prod.yml up -d --scale agora=3
 ## 📄 文件
 
 ### 主要文件
-- **[SOLID 架構](./SOLID_ARCHITECTURE.md)**: 詳細架構文件
-- **[部署指南](./DEPLOYMENT.md)**: 完整部署指南
-- **[測試指南](./TEST_SUMMARY.md)**: 全面測試文件
-- **[貢獻準則](./CONTRIBUTING.md)**: 貢獻者指南
+- **[SOLID 架構](./documentation/SOLID_ARCHITECTURE.md)**: 詳細架構文件
+- **[部署指南](./documentation/DEPLOYMENT.md)**: 完整部署指南
+- **[測試指南](./documentation/TEST_SUMMARY.md)**: 全面測試文件
+- **[貢獻準則](./documentation/CONTRIBUTING.md)**: 貢獻者指南
 
 ### 完整文件系統
 請參閱本 README 頂部的 [📚 文件說明](#-文件說明) 部分，包含所有模組化文件的連結。

@@ -1,9 +1,11 @@
 # 🗳️ Agora - Enterprise Anonymous Voting for Slack
 
+> **🌐 Language**: [English](README.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md)
+
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://docker.com)
-[![SOLID](https://img.shields.io/badge/Architecture-SOLID-yellow.svg)](./SOLID_ARCHITECTURE.md)
+[![SOLID](https://img.shields.io/badge/Architecture-SOLID-yellow.svg)](./documentation/SOLID_ARCHITECTURE.md)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 **Agora** is a production-ready, enterprise-grade Slack workspace application that provides comprehensive anonymous voting tools for team decision-making. Built with SOLID architecture principles, it offers advanced analytics, role management, scheduling automation, and a web management dashboard.

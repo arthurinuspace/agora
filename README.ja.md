@@ -1,9 +1,11 @@
 # 🗳️ Agora - Slack向けエンタープライズ匿名投票システム
 
+> **🌐 言語**: [English](README.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md)
+
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://docker.com)
-[![SOLID](https://img.shields.io/badge/Architecture-SOLID-yellow.svg)](./SOLID_ARCHITECTURE.md)
+[![SOLID](https://img.shields.io/badge/Architecture-SOLID-yellow.svg)](./documentation/SOLID_ARCHITECTURE.md)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 **Agora** は、チーム意思決定のための包括的な匿名投票ツールを提供する、本格的なエンタープライズ級Slackワークスペースアプリケーションです。SOLID アーキテクチャ原則で構築され、高度な分析、ロール管理、スケジューリング自動化、Web管理ダッシュボードを提供します。
@@ -20,14 +22,14 @@
 - **[使用ガイド](docs/usage.md)** - 使用ガイドと例
 
 ### 🏗️ アーキテクチャドキュメント
-- **[SOLIDアーキテクチャ](SOLID_ARCHITECTURE.md)** - 完全アーキテクチャドキュメント
+- **[SOLIDアーキテクチャ](documentation/SOLID_ARCHITECTURE.md)** - 完全アーキテクチャドキュメント
 - **[技術スタック](docs/architecture/tech-stack.md)** - 技術スタック説明
 - **[APIドキュメント](docs/api.md)** - RESTful API リファレンス
 
 ### 🔧 開発・デプロイ
 - **[開発環境セットアップ](docs/development/setup.md)** - 開発環境セットアップ
 - **[Dockerデプロイ](docs/deployment/docker.md)** - Dockerデプロイガイド
-- **[本番環境デプロイ](DEPLOYMENT.md)** - 本番環境デプロイ
+- **[本番環境デプロイ](documentation/DEPLOYMENT.md)** - 本番環境デプロイ
 
 ### 🛡️ セキュリティ・管理
 - **[セキュリティガイド](docs/security.md)** - セキュリティベストプラクティス
@@ -35,7 +37,7 @@
 - **[モニタリング](docs/monitoring.md)** - モニタリングとログ
 
 ### 🧪 テスト・品質
-- **[テストガイド](TEST_SUMMARY.md)** - テストガイド
+- **[テストガイド](documentation/TEST_SUMMARY.md)** - テストガイド
 - **[テストガイドライン](docs/testing/guidelines.md)** - テスト要件
 - **[パフォーマンステスト](docs/testing/performance.md)** - パフォーマンステスト
 
